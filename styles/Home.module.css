@@ -1,0 +1,32 @@
+.post {
+  background: #fff;
+  padding: 2px 16px;
+  display: block;
+  margin: 20px 10px;
+  border-left: 8px solid #fff;
+  height: auto
+}
+
+.post:hover {
+  border-left: 8px solid rgb(44, 43, 43);
+  border-bottom: 0;
+}
+
+.btn {
+  background-color: rgb(7, 62, 149);
+  padding: 0.5em;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  border-bottom: 0;
+  background-color: rgb(13, 74, 172);
+}
+
+.btn:active {
+  border-bottom: 0;
+  border: 2px solid rgb(13, 74, 172);
+  background-color: rgb(13, 74, 172);
+}
