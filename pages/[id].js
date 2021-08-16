@@ -1,3 +1,6 @@
+import styles from '../styles/Home.module.css';
+import Link from 'next/link'
+
 export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data = await res.json();
@@ -30,6 +33,7 @@ const DetailsPage = (props) => {
         <div>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
+            <Link href='/'><a className={styles.btn}>Back to all posts</a></Link>
         </div>
     )
 }
